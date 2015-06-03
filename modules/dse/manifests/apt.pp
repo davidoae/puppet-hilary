@@ -4,7 +4,8 @@ class dse::apt ($username, $password) {
         location    => "http://$username:$password@debian.datastax.com/enterprise",
         repos       => 'stable main',
         release     => '',
-        key_source  => 'http://debian.datastax.com/debian/repo_key',
-        key         => 'B4FE9662',
+        key         => { 'source'   => 'http://debian.datastax.com/debian/repo_key',
+                         'id'       => 'B4FE9662'
+                       },
     }
 }

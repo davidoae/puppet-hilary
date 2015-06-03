@@ -7,8 +7,9 @@ class oaeservice::cassandra::dsc {
         location    => 'http://debian.datastax.com/community',
         repos       => 'stable main',
         release     => '',
-        key         => 'B999A372',
-        key_source  => 'http://debian.datastax.com/debian/repo_key',
+        key         => { 'source'    => 'http://debian.datastax.com/debian/repo_key',
+                         'id'        => 'B999A372'
+                       },
     }
 
     Class['::oracle-java'] -> Class['::cassandra']

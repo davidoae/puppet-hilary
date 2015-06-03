@@ -3,10 +3,6 @@ class oaeservice::deps::apt::elasticsearch {
         location    => 'http://packages.elasticsearch.org/elasticsearch/1.5/debian',
         release     => 'stable',
         repos       => 'main',
-        key         => 'D88E42B4',
-
-        # Elasticsearch doesn't publish their sources into the apt repository, don't
-        # include them or you will get errors when trying to run `apt-get update`
-        include_src => false,
+        key         => { 'id' => 'D88E42B4' },
     }
 }
