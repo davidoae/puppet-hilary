@@ -109,7 +109,7 @@ class nginx (
         mode    => 0640,
         owner   => $owner,
         group   => $group,
-        source  => "puppet:///mopdules/nginx/redirect_map.conf",
+        source  => "puppet:///modules/nginx/redirect_map.conf",
         require => $nginx_config_requires,
     }
 
