@@ -4,6 +4,6 @@ class localconfig::externalips {
   Externalip <<| |>>
 
   ## and export the externalip entry of this resource so it can be acquired by all other nodes
-  @@externalip { "$::clientcert": ip => $::ipaddress_eth0 }
+  @@externalip { $hostname: ip => $::ipaddress_eth0 }
 
 }

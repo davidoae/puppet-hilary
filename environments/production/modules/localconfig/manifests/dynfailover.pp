@@ -4,6 +4,9 @@ class dynfailover {
     $dynapiuser  = hiera('dynapiuser')
     $dynapipass  = hiera('dynapipass')
 
+    $web0ip = Externalip <<| name == 'web0' |>>
+    $web1ip = Externalip <<| name == 'web1' |>>
+
     file ( 'dyn_failover':
         path    => "/usr/local/bin/dyn_failover",
         mode    => 0755,
