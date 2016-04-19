@@ -63,7 +63,22 @@
     "shibboleth_subjectname": "CN=shib-sp.oae-qa.oaeproject.org",
     "shibboleth_sp_host": "shib-sp.oae-qa.oaeproject.org",
 
+    "__comment": "override by uncommenting in qaX.json"
+    "app_install_method": "archive",
+    "app_install_config": {
+        "version_major_minor": "12.3",
+        "version_patch": "1",
+        "version_nodejs": "0.10.30"
+    },
+    "app_ui_path": "/opt/3akai-ux/optimized",
+
     "ux_root_dir": "/opt/3akai-ux",
+    "ux_install_method": "archive",
+    "ux_install_config": {
+        "version_major_minor": "12.3",
+        "version_patch": "1"
+    },
+
 
     "db_cluster_name": "OAE QA Cluster",
     "db_keyspace": "oae",

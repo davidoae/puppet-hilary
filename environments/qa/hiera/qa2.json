@@ -3,19 +3,18 @@
         "::oaeqaautomation"
     ],
 
-    "app_install_method": "archive",
-    "app_install_config": {
-        "version_major_minor": "12.1",
-        "version_patch": "1",
-        "version_nodejs": "0.10.30"
-    },
-    "app_ui_path": "/opt/3akai-ux/optimized",
+    "__comment": "uncomment to override common.json",
 
-    "ux_root_dir": "/opt/3akai-ux",
-    "ux_install_method": "archive",
-    "ux_install_config": {
-        "version_major_minor": "12.1",
-        "version_patch": "1"
+    "__app_install_method": "archive",
+    "__app_install_config": {
+        "__version_major_minor": "12.3",
+        "__version_patch": "1",
+        "__version_nodejs": "0.10.30"
+    },
+    "__ux_install_method": "archive",
+    "__ux_install_config": {
+        "__version_major_minor": "12.3",
+        "__version_patch": "1"
     },
 
     "web_domain": "oae-qa2.oaeproject.org",

@@ -3,6 +3,20 @@
         "::oaeqaautomation"
     ],
 
+    "__comment": "uncomment to override common.json",
+
+    "__app_install_method": "archive",
+    "__app_install_config": {
+        "__version_major_minor": "12.3",
+        "__version_patch": "1",
+        "__version_nodejs": "0.10.30"
+    },
+    "__ux_install_method": "archive",
+    "__ux_install_config": {
+        "__version_major_minor": "12.3",
+        "__version_patch": "1"
+    },
+
     "ui_cdn_url": "https://qa0-researchresearch-researchresearch.netdna-ssl.com",
     "web_domain": "oae-qa0.oaeproject.org",
     "email_debug": "false"
