@@ -4,6 +4,7 @@ $MaxMessageSize 32k
 
 $ModLoad imuxsock   # provides support for local system logging (e.g. via logger command)
 $ModLoad imklog     # provides kernel logging support (previously done by rklogd)
+$ModLoad omrelp     # proved support for more reliable log transfer between rsyslog services
 $SystemLogRateLimitInterval 0
 
 <% if imfiles -%>
@@ -30,5 +31,7 @@ $InputRunFileMonitor
 $template DailyMailLog,"/var/log/mail/%$YEAR%-%$MONTH%-%$DAY%.log"
 mail.*         ?DailyMailLog
 
-# Provides TCP forwarding. The IP is the server's IP address
-*.* @@<%= server_host %>
+# Provides RELP forwarding. The IP is the server's IP address
+# Port 414 was picked for extra securty <1024 as no auth
+*.* :omrelp:<%= server_host %>:414
+

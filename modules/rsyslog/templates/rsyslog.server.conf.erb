@@ -20,6 +20,11 @@ $InputTCPServerRun 514
 $ModLoad imudp
 $UDPServerRun 1514
 
+# Provides RELP syslog reception. Only other rsyslog services can use it.
+# Using port 414 for extra security <1024 as no auth
+$ModLoad imrelp
+$InputRELPServerRun 414
+
 $SystemLogRateLimitInterval 0
 
 #### GLOBAL DIRECTIVES ####
