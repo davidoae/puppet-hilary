@@ -6,7 +6,7 @@ class rsyslog (
     $group            = 'root',
     $imfiles          = false,) {
 
-    package { 'rsyslog': ensure => installed }
+    package { 'rsyslog-relp': ensure => installed }
 
     file { $server_logdir:
         ensure  => directory,
