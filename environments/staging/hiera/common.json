@@ -5,7 +5,6 @@
         "::oaeservice::firewall",
         "::oaeservice::hosts",
         "::oaeservice::limits",
-        "::oaeservice::mcollective",
         "::oaeservice::munin::client",
         "::oaeservice::nagios",
         "::oaeservice::nagios::disk",
@@ -39,7 +38,7 @@
 
     "app_install_method": "archive",
     "app_install_config": {
-        "version_major_minor": "12.4",
+        "version_major_minor": "12.5",
         "version_patch": "0",
         "version_nodejs": "0.10.30"
     },
@@ -69,7 +68,7 @@
     "ux_root_dir": "/opt/3akai-ux",
     "ux_install_method": "archive",
     "ux_install_config": {
-        "version_major_minor": "12.4",
+        "version_major_minor": "12.5",
         "version_patch": "0"
     },
 
@@ -140,7 +139,7 @@
 
     "nginx::owner": "nginx",
     "nginx::group": "nginx",
-    "nginx::version": "1.7.6-1+precise1",
+    "nginx::version": "1.10.0-0ubuntu0.16.04.4",
 
     "redis::owner": "redis",
     "redis::group": "redis",

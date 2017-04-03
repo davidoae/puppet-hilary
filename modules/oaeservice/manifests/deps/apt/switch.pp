@@ -5,7 +5,7 @@ class oaeservice::deps::apt::switch {
     }
     ::apt::source { 'switch.ch':
         location    => 'http://pkg.switch.ch/switchaai/ubuntu',
-        release     => 'precise',
+        release     => 'xenial',
         repos       => 'main',
         key         => '15B76742',
 

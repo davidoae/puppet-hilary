@@ -13,6 +13,11 @@ node 'web1' inherits web {
   hiera_include(classes)
 }
 
+node 'web2' inherits web {
+  $nodesuffix = 1
+  hiera_include(classes)
+}
+
 
 
 ###############
